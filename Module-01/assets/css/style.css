@@ -1,0 +1,209 @@
+/* Utilisation de Google Fonts pour la marque */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+/* Réinitialisation des styles et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.brand-name {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 24px; 
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #005FA2; /* Couleur de fond du bouton */
+    padding: 10px 20px; /* Rembourrage intérieur du bouton */
+    border-radius: 5px; /* Bordure arrondie du bouton */
+    cursor: pointer; /* Curseur au survol */
+    transition: background-color 0.3s ease; /* Transition en douceur */
+  }
+  
+  nav ul li a:hover {
+    background-color: #004672; /* Couleur de fond du bouton au survol */
+  }
+  
+  
+
+/* Section Features */
+section#features {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.slider-container {
+    padding: 2rem;
+
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider img {
+    float: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%) ;
+    z-index: 1;
+}
+.slider-nav a{
+   width: 0.5rem;
+   height: 0.5rem;
+   border-radius: 50%;
+   background-color: #fff;
+   opacity: 0.75;
+   transition: opacity ease 250rem;
+}
+.slider-nav a:hover {
+    opacity: 1;
+ }
+ .carousel {
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 10px;
+    
+  }
+
+.carousel img {
+    width: 100px; /* Taille des images */
+    margin: 0 10px; /* Espacement entre les images */
+}
+
+/* Card */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .card {
+    width: 30%;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-image {
+    width: 60%;
+    height: auto;
+    position: relative;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  .card-description {
+    color: #666;
+  }
+  
+  .card-button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    align-self: flex-end;
+}
